@@ -1,0 +1,32 @@
+
+#acc div ul{
+	overflow:hidden;
+}
+
+.anchor{
+	height:300px;
+	width:50px;
+	float:left;
+	border:1px solid #000;
+	background:#EEE8AA;
+	
+}
+.anchor a{
+	text-decoration:none;
+	color:#DC143C;
+	font-weight:bold;
+	-webkit-transform: rotate(-90deg);
+	display:block;
+}
+.content{
+	height:300px;
+	width:320px;
+	float:left;
+	border:1px solid #000;
+	background:#CD853F;
+}
+li{
+	float:left;
+	list-style-type:none;	
+	overflow:hidden;
+}

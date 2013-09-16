@@ -1,0 +1,49 @@
+
+<!--Accordion-->
+<html>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">	
+		</script>
+		<script>
+		$(document).ready(function(){
+			$(".content").hide();
+			});
+		$(document).ready(function(){
+				$(".anchor").click(function() {
+					$(".content").hide('slow');
+					$(this).next().animate({
+					height: ['toggle', 'swing'],
+					}).show('slow');
+				});
+			});
+		
+		</script>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+		<link rel="stylesheet" href="verticalstyle.css" type="text/css">
+	</head>
+	<body>
+		<div id="acc">
+			<ul>
+				<li>
+					<div class="anchor"><a href="#">Menu 1</a></div>
+					<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+				</li>
+				<li>
+					<div class="anchor"><a href="#">Menu 2</a></div>
+					<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+				</li>
+				<li>
+					<div class="anchor"><a href="#">Menu 3</a></div>
+					<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+				</li>
+				<li>
+					<div class="anchor"><a href="#">Menu 4</a></div>
+					<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+				</li>
+			</ul>
+		
+		</div>
+		
+		
+	</body>
+</html>

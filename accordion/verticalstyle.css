@@ -1,0 +1,24 @@
+
+.anchor{
+	width:320px;
+	padding:10px 0px;
+	border:1px solid #000;
+	background:#EEE8AA;
+	
+}
+.anchor a{
+	text-decoration:none;
+	color:#DC143C;
+	font-weight:bold;
+}
+.content{
+	height:300px;
+	width:320px;
+	float:left;
+	border:1px solid #000;
+	background:#CD853F;
+}
+li{
+	list-style-type:none;	
+
+}

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="imagestyle.css" type="text/css">
+		<script src="../jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	</head>
+	<body>
+		
+			<center><div id="image">
+			<img src="img.jpg" id="im">
+				<div id="tag">
+					<div id="top">
+					</div>
+					<div id="bottom">
+						<div id="text">
+							<input type="text" name="name" id="textname" onkeyup="search_func(this.value);"></input>
+						</div>
+						<div id="new"></div>
+						<div id="save">
+							<input type="submit" name="save" value="save"></input>
+						</div>
+					</div>
+				</div>
+			</div></center>
+		Tagged names:
+		<div id="area">
+		</div>
+	</body>
+	<script src="ptag.js">	</script>
+	<script>
+	/**Auto-suggest*/
+		var ajaxcall;
+	function search_func(value)
+			{
+			if(typeof ajaxcall!=="undefined")
+			{	
+				//alert('inside');
+				ajaxcall.abort();
+			}
+			ajaxcall=$.ajax({
+			type:'post',
+			url:"auto.php",
+			data:{'name':value},
+			success:function(datatype){
+				if(datatype!="")
+				{
+					$("#new").html(datatype);
+					$(".object").on("click",(function(e){
+					var $text=$(this).text();
+					$("#textname").val($text);
+					$(".object").hide();
+				})); }	
+			}
+			});
+			}
+		</script>
+</html>

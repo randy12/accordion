@@ -1,0 +1,56 @@
+body{
+	background: red;
+}
+#a{
+	display:block;
+}
+#b,#c,#d,#e{
+	display:none;
+}
+@media(max-width:1024px){
+	body{
+		background: orange;
+	}
+	#a{
+		display:none;
+	}
+	#b{
+		display:block;
+	}
+}
+
+@media (max-width:767px){
+	body{
+		background: pink;
+	}
+	#b{
+		display:none;
+	}
+	#c{
+		display:block;
+	}
+}
+
+@media (max-width:480px){
+	body{
+		background: blue;
+	}
+	#c{
+		display:none;
+	}
+	#d{
+		display:block;
+	}
+}
+
+@media (max-width:320px){
+	body{
+		background: white;
+	}
+	#d{
+		display:none;
+	}
+	#e{
+		display:block;
+	}
+}
